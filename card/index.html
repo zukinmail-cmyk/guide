@@ -34,6 +34,19 @@ h1 em{font-style:italic;color:var(--purple)}
 .soft{background:#fffaf1;color:var(--purple);border:2px solid var(--purple);padding:9px 10px 9px 24px}
 .soft .ar{background:var(--purple);color:#fff}
 .small{font-size:16px;color:var(--purple);font-weight:500;margin-top:14px}
+.sec{margin-top:clamp(46px,9vw,64px);text-align:left}
+.label{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.label::after{content:"";flex:1;height:1px;background:var(--line)}
+.sec h2{font-family:var(--serif);font-weight:500;font-size:clamp(24px,5.6vw,30px);line-height:1.2;color:var(--ink);margin:12px 0 18px;text-wrap:balance}
+.sv{display:grid;grid-template-columns:48px 1fr;gap:6px 14px;padding:20px 0;border-top:1px solid var(--line);text-decoration:none;color:inherit}
+.sv:last-of-type{border-bottom:1px solid var(--line)}
+.sv .n{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--amber);line-height:1.1}
+.sv h3{font-family:var(--serif);font-weight:600;font-size:21px;color:var(--purple);line-height:1.25;margin-bottom:6px}
+.sv p{font-size:17px;color:var(--ink)}
+.sv .tags{font-style:italic;font-size:14.5px;color:var(--muted);margin-top:8px}
+.sv:hover h3{color:var(--purple-deep)}
+.sv .note{grid-column:1 / -1;margin-top:10px}
+.cta2{margin-top:30px;text-align:center}
 .note{background:var(--note-bg);border:2px dashed var(--note-line);color:var(--note-ink);border-radius:12px;padding:12px 14px;font-size:15px;line-height:1.5;margin-top:22px;text-align:left}
 .note b.t{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#2d5f97;margin-bottom:4px}
 .note i{font-style:normal;background:#fff8c9;padding:0 4px;border-radius:4px}
@@ -58,6 +71,45 @@ body.clean .note{display:none}
   <div class="note"><b class="t">Подумайте: заголовок</b>Это <i>моя версия</i>, не ваши слова. Идея та же, что у образца: одна смелая мысль про главную проблему. Варианты: (1) «Работаешь целый день, а ощущение, что топчешься на месте» (из путеводителя); (2) «Не знаете, куда расти дальше, или всё держится на вас одном?»; (3) «Прежде чем внедрять ИИ, стоит понять, где бизнес теряет время и деньги». Какой ближе к голосу ваших клиентов?</div>
   <div class="note"><b class="t">Подумайте: кнопки</b>Две кнопки, как вы хотели: действие (ТОЧКА, разговор) и знакомство (путеводитель с примерами салона, ателье и «А нужен ли ИИ?»). Подпись под кнопками можно убрать. Каналы Telegram, YouTube, Instagram не добавлял: решили не нужно. Если захотите значок Telegram в углу, сделаю.</div>
 </header>
+
+<section class="sec">
+  <div class="label">Чем я занимаюсь</div>
+  <h2>Пять вещей, которые я уже делал для клиентов</h2>
+  <div class="note"><b class="t">Подумайте: как отобрал</b>Как у Черемисиной: крупный номер, название, два предложения, три тега, карточка целиком нажимается. Но убрал всё, чего вы не делали. В список вошло только то, что подтверждено в ваших файлах и у Джарвиса: клиенты Козбицкий, Таня, Оля, посты 138, 150, 151. Имена клиентов на странице не указаны. Названия карточек и теги - мои, <i>переделайте под свою речь</i>.</div>
+
+  <a class="sv" href="https://t.me/SergeiZukin">
+    <div class="n">01</div>
+    <div><h3>Разбор ситуации</h3><p>Нахожу, где бизнес буксует: что отнимает время и деньги и с чего начать. Короткий разговор и один понятный вывод.</p><div class="tags">Узкое место · Причина, а не симптом · С чего начать</div></div>
+    <div class="note"><b class="t">Подумайте</b>Основа: ваша бесплатная диагностика 15-20 минут. Скажите, если называете её иначе (аудит, разбор, диагностика). Цену не пишу: аудит у вас «от 1500 грн», но решать вам.</div>
+  </a>
+
+  <a class="sv" href="https://t.me/SergeiZukin">
+    <div class="n">02</div>
+    <div><h3>Сопровождение на месяц</h3><p>Держим фокус на одной важной задаче и сверяем решения. В конце месяца честный итог: что планировали и что получилось.</p><div class="tags">Один фокус · Сверка решений · План и факт</div></div>
+    <div class="note"><b class="t">Подумайте</b>Это ваш продукт на 15 000 грн в месяц. Цену на карточке не ставил. В файле «что входит» ещё не решено [УТОЧНИТЬ]. Напишите своими словами, как это бывает на деле.</div>
+  </a>
+
+  <a class="sv" href="https://t.me/SergeiZukin">
+    <div class="n">03</div>
+    <div><h3>ИИ в ежедневной рутине</h3><p>Подключаю ИИ там, где он правда экономит время: черновики контента и ответов клиентам. Человек проверяет и решает.</p><div class="tags">Черновики · Экономия времени · Человек решает</div></div>
+    <div class="note"><b class="t">Подумайте</b>Основа: салон красоты (пост 138, 3-4 часа в день). Если делали другое (протокол планёрки, бот для руководителя, отчёты), добавьте сюда или отдельной карточкой. В файлах это записано как план, а не как сделанное [УТОЧНИТЬ].</div>
+  </a>
+
+  <a class="sv" href="https://t.me/SergeiZukin">
+    <div class="n">04</div>
+    <div><h3>Контент без съёмок: AI-образ</h3><p>Нет бюджета на съёмки с моделью? Делаем виртуальную модель и из неё ролики, карусели и карточки для маркетплейсов.</p><div class="tags">AI-образ · Ролики и карусели · Карточки товара</div></div>
+    <div class="note"><b class="t">Подумайте</b>Основа: ателье (пост 151) и работа с Олей: карусель, видео, AI-образ. Честно: ваш продукт «5 роликов за 4 недели» ещё не продан, поэтому срок и цену здесь не пишу.</div>
+  </a>
+
+  <a class="sv" href="https://t.me/SergeiZukin">
+    <div class="n">05</div>
+    <div><h3>Исследование под задачу</h3><p>Изучаю рынок, конкурентов и предложения, чтобы ответить на конкретный вопрос. Например: как и где искать сотрудников.</p><div class="tags">Рынок · Конкуренты · Выводы</div></div>
+    <div class="note"><b class="t">Подумайте</b>Основа: поиск сотрудников для Тани (Одесса) и Оли (Киев). Не уверен, считаете ли вы это услугой или частью сопровождения. Если часть, удалим карточку.</div>
+  </a>
+
+  <div class="note"><b class="t">Не включил, ждёт вашего слова</b>(1) «Умный конспект / транскрибатор»: начали 04.11, пока образец и концепция. (2) Юридическое направление: вы сами просили не смешивать. (3) Обучение работе с ИИ (ступени для Козбицкого): пока предложение без ответа. Скажите, что из этого добавить.</div>
+  <div class="cta2"><a class="b main" href="https://t.me/SergeiZukin">Написать слово ТОЧКА <span class="ar">&rarr;</span></a></div>
+</section>
 </div>
 <button class="toggle" type="button" id="tg">Скрыть заметки</button>
 <script>
