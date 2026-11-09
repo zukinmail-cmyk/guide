@@ -77,6 +77,12 @@ section.s{padding:clamp(52px,8vw,96px) 0;border-bottom:1px solid var(--line)}
 .chart svg{width:100%;height:auto;display:block}
 .chart .leg{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px}
 .chart .leg .dot{color:var(--amber)}
+.steps{display:grid;gap:0;margin-top:36px;border-top:1px solid var(--line)}
+@media(min-width:860px){.steps{grid-template-columns:repeat(3,1fr)}.step+.step{border-left:1px solid var(--line)}}
+.step{padding:24px 22px;border-bottom:1px solid var(--line)}
+.step h3{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,28px);line-height:1.2;margin:8px 0 8px}
+.step.last h3{color:var(--purple)}
+.step p{color:var(--muted);font-size:16px}
 .axes{display:grid;gap:26px;margin-top:40px;align-items:start}
 @media(min-width:860px){.axes{grid-template-columns:1fr auto 1fr}}
 .ax h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);line-height:1.2;font-weight:600;margin:6px 0 8px}
@@ -194,21 +200,21 @@ body.clean .note{display:none}
 </div></div>
 
 <section class="s" id="manifest">
-  <div class="sh"><span class="n">01</span><span class="mono">Где бизнес теряет время</span><span class="l"></span><span class="mono">2026</span></div>
+  <div class="sh"><span class="n">01</span><span class="mono">Типичные ситуации</span><span class="l"></span><span class="mono">2026</span></div>
   <div class="two">
     <h2>Где бизнес <em>теряет</em> время и деньги.</h2>
     <div class="side">Часто дела разбросаны по чатам, таблицам и головам. Инструментов много, а картины целиком нет. ИИ иногда подключают, не понимая зачем.<small>Это не вывод про всех, а то, что я чаще всего вижу в малом бизнесе.</small></div>
   </div>
-  <div class="chart" role="img" aria-label="Схема: много потоков, один выделен">
-    <div class="top"><span class="mono">Сигнал / шум</span><span class="mono">Схема</span></div>
-    <svg viewBox="0 0 1000 290" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono,monospace"><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,29 72,36 124,29 176,16 228,12 280,21 332,30 384,27 436,21 488,23 540,31 592,33 644,22 696,12 748,15 800,26 852,32"/><text x="994" y="28" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">ЗАЯВКИ</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,65 72,52 124,43 176,48 228,58 280,60 332,54 384,52 436,59 488,65 540,59 592,46 644,43 696,52 748,62 800,60 852,53"/><text x="994" y="59" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">РЕКЛАМА</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,77 72,76 124,85 176,91 228,87 280,82 332,87 384,95 436,94 488,82 540,73 592,78 644,90 696,93 748,86 800,83 852,89"/><text x="994" y="90" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">СОЦСЕТИ</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,112 72,121 124,119 176,113 228,114 280,124 332,128 384,119 436,107 488,106 540,116 592,123 644,120 696,114 748,117 800,125 852,124"/><text x="994" y="121" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">ДИРЕКТ</text><polyline fill="none" stroke="#f28c28" stroke-width="2.2" points="20,152 72,146 124,143 176,151 228,159 280,156 332,143 384,136 436,143 488,152 540,152 592,146 644,146 696,154 748,158 800,149 852,137"/><text x="994" y="152" font-size="10" letter-spacing="1" fill="#f28c28" text-anchor="end">ИИ</text><circle cx="176" cy="151" r="8" fill="none" stroke="#f28c28" stroke-width="1.5"/><circle cx="176" cy="151" r="2.5" fill="#f28c28"/><circle cx="592" cy="146" r="8" fill="none" stroke="#f28c28" stroke-width="1.5"/><circle cx="592" cy="146" r="2.5" fill="#f28c28"/><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,173 72,178 124,188 176,190 228,179 280,168 332,170 384,180 436,184 488,179 540,175 592,181 644,189 696,185 748,173 800,166 852,174"/><text x="994" y="183" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">УЧЁТ</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,215 72,222 124,216 176,203 228,199 280,207 332,214 384,212 436,206 488,209 540,218 592,220 644,209 696,198 748,200 800,212 852,217"/><text x="994" y="214" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">ОТЗЫВЫ</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,252 72,239 124,230 176,234 228,243 280,244 332,238 384,237 436,246 488,252 540,246 592,233 644,229 696,238 748,247 800,245 852,239"/><text x="994" y="245" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">ОПЕРАЦИИ</text><polyline fill="none" stroke="#8d7fa3" stroke-width="1.2" points="20,264 72,263 124,271 176,276 228,271 280,267 332,273 384,282 436,282 488,269 540,260 592,265 644,275 696,277 748,271 800,269 852,276"/><text x="994" y="276" font-size="10" letter-spacing="1" fill="#675f71" text-anchor="end">ПРОДАЖИ</text></svg>
-    <div class="leg mono"><span class="dot">● активный сигнал</span><span>9 потоков</span><span>·</span><span>один главный вывод</span></div>
+  <div class="steps">
+    <div class="step"><span class="mono">01 · Симптом</span><h3>Не успеваю отвечать клиентам</h3><p>То, что владелец замечает сам.</p></div>
+    <div class="step"><span class="mono">02 · Причина</span><h3>Все обращения в разных чатах</h3><p>То, что стоит за симптомом.</p></div>
+    <div class="step last"><span class="mono">03 · Что менять первым</span><h3>Собрать заявки в одном месте</h3><p>Один шаг, с которого начинаем.</p></div>
   </div>
-  <div class="note"><b>График</b>Схема без цифр. У неё живая схема с цифрами «9 каналов, 14 источников». У меня просто рисунок без цифр: реальных данных нет, выдумывать нельзя. Оставить, убрать, или есть настоящие цифры?</div>
+  <div class="note"><b>Схема</b>Три шага вместо схемы с девятью потоками. Пример с заявками - иллюстрация, не клиентский случай. Цифр нет.</div>
   <div class="rows">
-    <a class="row" href="https://t.me/ZyukinAI/138"><span class="no">01</span><h3>Салон красоты</h3><p>3-4 часа в день уходили на контент и ответы в директе.</p><ul><li>Рутина</li></ul></a>
-    <a class="row" href="https://t.me/ZyukinAI/151"><span class="no">02</span><h3>Ателье</h3><p>Красивая одежда есть, а бюджета на съёмку с моделью нет.</p><ul><li>Контент</li></ul></a>
-    <a class="row" href="https://t.me/ZyukinAI/150"><span class="no">03</span><h3>Внедрять ИИ, не понимая зачем</h3><p>Прежде чем что-то подключать, стоит понять, где теряются время и деньги.</p><ul><li>Вопрос</li></ul></a>
+    <div class="row"><span class="no">01</span><h3>Рутина съедает день</h3><p>Контент, ответы в директе и переписки занимают часы, которых не хватает на развитие.</p><ul><li>Время</li></ul></div>
+    <div class="row"><span class="no">02</span><h3>Контент упирается в бюджет</h3><p>Есть что показать, но нет денег и сил на съёмки.</p><ul><li>Контент</li></ul></div>
+    <div class="row"><span class="no">03</span><h3>ИИ подключают, не понимая зачем</h3><p>Сначала инструмент, потом поиск, для чего он нужен.</p><ul><li>Решения</li></ul></div>
   </div>
   <div class="axes">
     <div class="ax"><span class="mono">Часто спрашивают</span><h3>Использовать ИИ или нет?</h3><p>Этот вопрос мало что объясняет. ИИ есть у многих, но по-разному.</p></div>
@@ -228,7 +234,7 @@ body.clean .note{display:none}
       <p><span class="ph">Почему вы этим занимаетесь: 2-3 предложения вашей истории. [УТОЧНИТЬ]</span></p>
       <div class="lists">
         <div><span class="mono">Поля экспертизы</span><ul><li>Финансы малого бизнеса</li><li>Диагностика причин</li><li>Порядок в процессах</li><li>ИИ-помощники</li><li>Контент</li></ul></div>
-        <div><span class="mono">Что я делаю</span><ul><li>Нахожу узкое место</li><li>Навожу порядок в делах</li><li>Подключаю ИИ, где нужен</li><li>Сопровождаю до результата</li><li><span class="ph">[УТОЧНИТЬ]</span></li></ul></div>
+        <div><span class="mono">Что я делаю</span><ul><li>Нахожу узкое место</li><li>Навожу порядок в делах</li><li>Подключаю ИИ, где нужен</li><li>Сопровождаю до результата</li></ul></div>
       </div>
     </div>
   </div>
@@ -236,14 +242,14 @@ body.clean .note{display:none}
 </section>
 
 <section class="s" id="work">
-  <div class="sh"><span class="n">03</span><span class="mono">С чем я могу помочь</span><span class="l"></span><span class="mono">Направления</span></div>
+  <div class="sh"><span class="n">03</span><span class="mono">Направления</span><span class="l"></span><span class="mono">Начало - разговор</span></div>
   <div class="two">
     <h2>С чем я могу <em>помочь</em>.</h2>
     <div class="side">Начинаем с разговора: я задаю вопросы, вы рассказываете ситуацию. Дальше выбираем, что подходит.</div>
   </div>
   <div class="rows">
     <a class="row" href="https://t.me/SergeiZukin"><span class="no">01</span><h3>Разбор ситуации</h3><p>Нахожу, где бизнес теряет время и деньги: в заявках, ответах клиентам, учёте. Не аудит всего подряд, а карта узких мест.</p><ul><li>Узкие места</li><li>Причины</li><li>План шагов</li></ul></a>
-    <a class="row" href="https://t.me/SergeiZukin"><span class="no">02</span><h3>Сопровождение на месяц</h3><p>Месяц рядом: проходим шаги вместе, проверяем, что работает, и поправляем. <span class="ph">Точное содержание [УТОЧНИТЬ]</span></p><ul><li>Ритм встреч</li><li>Задачи по шагам</li><li>Результат</li></ul></a>
+    <a class="row" href="https://t.me/SergeiZukin"><span class="no">02</span><h3>Сопровождение на месяц</h3><p>Месяц рядом: проходим шаги вместе, проверяем, что работает, и поправляем.</p><ul><li>Ритм встреч</li><li>Задачи по шагам</li><li>Результат</li></ul></a>
     <a class="row" href="https://t.me/SergeiZukin"><span class="no">03</span><h3>ИИ в ежедневной рутине</h3><p>ИИ готовит черновики, человек проверяет и решает. Подключаю там, где он снимает реальную нагрузку.</p><ul><li>Помощники</li><li>Черновики</li><li>Человек решает</li></ul></a>
     <a class="row" href="https://t.me/SergeiZukin"><span class="no">04</span><h3>Контент без съёмок</h3><p>Виртуальная модель или образ: из него делаются ролики, карусели и карточки для маркетплейсов.</p><ul><li>AI-образ</li><li>Ролики</li><li>Карусели</li></ul></a>
     <a class="row" href="https://t.me/SergeiZukin"><span class="no">05</span><h3>Исследование под задачу</h3><p>Изучаю рынок и конкурентов под ваш вопрос и отдаю понятные выводы, а не гору таблиц.</p><ul><li>Рынок</li><li>Конкуренты</li><li>Выводы</li></ul></a>
@@ -252,7 +258,7 @@ body.clean .note{display:none}
 </section>
 
 <section class="s" id="fit">
-  <div class="sh"><span class="n">04</span><span class="mono">Когда я могу быть полезен</span><span class="l"></span><span class="mono">Формат</span></div>
+  <div class="sh"><span class="n">04</span><span class="mono">Формат работы</span><span class="l"></span><span class="mono">Честно о границах</span></div>
   <div class="two">
     <h2>Когда я могу быть <em>полезен</em>.</h2>
     <div class="side">Чтобы разговор был по делу, сразу скажу, с каких запросов работа получается лучше.</div>
@@ -267,18 +273,19 @@ body.clean .note{display:none}
 </section>
 
 <section class="s" id="journal">
-  <div class="sh"><span class="n">05</span><span class="mono">Примеры из практики</span><span class="l"></span><span class="mono">Канал</span></div>
+  <div class="sh"><span class="n">05</span><span class="mono">Из канала</span><span class="l"></span><span class="mono">Telegram</span></div>
   <div class="two">
     <h2>Примеры <em>из практики</em>.</h2>
     <div class="side">Короткие разборы из канала: где малый бизнес теряет время и где в этом помогает ИИ.</div>
   </div>
   <div class="posts">
-    <a class="post" href="https://t.me/ZyukinAI/138"><div class="t"><span class="mono">ИИ в рутине</span><span class="mono">№ 01</span></div><h3>Салон красоты: 3-4 часа в день уходили на контент и директ</h3><p>Теперь ИИ готовит черновики, а человек проверяет и даёт команду опубликовать.</p><div class="b"><span class="mono">Пост в канале</span><span class="mono">Читать &rarr;</span></div></a>
-    <a class="post" href="https://t.me/ZyukinAI/151"><div class="t"><span class="mono">Контент</span><span class="mono">№ 02</span></div><h3>Ателье: виртуальная модель вместо съёмки</h3><p>Красивая одежда есть, а бюджета на съёмку с моделью нет. Из виртуальной модели сделали ролики, карусели и карточки для маркетплейсов.</p><div class="b"><span class="mono">Пост в канале</span><span class="mono">Читать &rarr;</span></div></a>
-    <a class="post" href="https://t.me/ZyukinAI/150"><div class="t"><span class="mono">Вопрос</span><span class="mono">№ 03</span></div><h3>А нужен ли вам ИИ?</h3><p>Не всегда. Прежде чем что-то внедрять, стоит понять, где бизнес теряет время и деньги.</p><div class="b"><span class="mono">Пост в канале</span><span class="mono">Читать &rarr;</span></div></a>
+    <a class="post" href="https://t.me/ZyukinAI/138"><div class="t"><span class="mono">ИИ в рутине</span><span class="mono">№ 01</span></div><h3>Салон красоты: 3-4 часа в день уходили на контент и директ</h3><p>Теперь ИИ готовит черновики, а человек проверяет и даёт команду опубликовать.</p><div class="b"><span class="mono">Статус: уточняется</span><span class="mono">Читать &rarr;</span></div></a>
+    <a class="post" href="https://t.me/ZyukinAI/151"><div class="t"><span class="mono">Контент</span><span class="mono">№ 02</span></div><h3>Ателье: виртуальная модель вместо съёмки</h3><p>Красивая одежда есть, а бюджета на съёмку с моделью нет. Из виртуальной модели сделали ролики, карусели и карточки для маркетплейсов.</p><div class="b"><span class="mono">Статус: уточняется</span><span class="mono">Читать &rarr;</span></div></a>
+    <a class="post" href="https://t.me/ZyukinAI/150"><div class="t"><span class="mono">Вопрос</span><span class="mono">№ 03</span></div><h3>А нужен ли вам ИИ?</h3><p>Не всегда. Прежде чем что-то внедрять, стоит понять, где бизнес теряет время и деньги.</p><div class="b"><span class="mono">Статус: уточняется</span><span class="mono">Читать &rarr;</span></div></a>
   </div>
+  <p style="margin-top:22px"><span class="ph">История с результатом: что было, что сделано, что получилось [УТОЧНИТЬ]</span></p>
   <div class="jfoot"><span class="mono">Канал о малом бизнесе и ИИ</span><a class="btn2" href="https://t.me/ZyukinAI">Все посты &rarr;</a></div>
-  <div class="note"><b>Журнал</b>У неё три статьи, у вас вместо них три поста канала. Время чтения убрал. Ссылки ведут прямо на посты.</div>
+  <div class="note"><b>Журнал</b>У неё три статьи, у вас вместо них три поста канала. Время чтения убрал. Под каждым постом метка статуса (реальный проект, демонстрация или разбор): какую поставить салону, ателье и вопросу, решаете вы. Ссылки ведут прямо на посты.</div>
 </section>
 
 <section class="s" id="faq">
@@ -316,7 +323,7 @@ body.clean .note{display:none}
     <div><h4>Соцсети</h4><ul><li><span class="ph">YouTube, ссылки пока нет</span></li><li><span class="ph">Instagram</span></li><li><span class="ph">TikTok</span></li></ul></div>
     <div><h4>Контакт</h4><ul><li><a href="https://t.me/SergeiZukin">Связаться в телеграм</a></li><li><a href="https://t.me/ZyukinAI">Канал</a></li><li><a href="https://t.me/ZyukinChat">Чат</a></li></ul></div>
   </div>
-  <div class="copy">© 2026 Сергей Зюкин · <span class="ph">реквизиты [УТОЧНИТЬ, нужны ли]</span></div>
+  <div class="copy">© 2026 Сергей Зюкин · Малый бизнес · ИИ · Порядок</div>
   <div class="note"><b>Подвал</b>Только живые ссылки: Telegram, канал, чат. Соцсети без ссылок - жёлтые неактивные заглушки. Реквизиты нужны?</div>
 </footer>
 
